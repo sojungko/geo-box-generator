@@ -1,0 +1,11 @@
+{
+  "name": "geo-box-generator",
+  "version": "1.0.0",
+  "description": "Takes in array of neighborhoods and suburbs and generates a geo box enveloping them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
