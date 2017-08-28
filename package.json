@@ -1,11 +1,27 @@
 {
   "name": "geo-box-generator",
   "version": "1.0.0",
-  "description": "Takes in array of neighborhoods and suburbs and generates a geo box enveloping them",
+  "description": "Takes in array of locations and generates the smallest geo box or polygon enveloping them",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sojungko/geo-box-generator"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rm -rf lib",
+    "test": "mocha"
+  },
+  "author": "Sojung Park",
+  "license": "ISC",
+  "dependencies": {
+    "qs": "^6.5.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "mocha": "^3.4.2"
+  }
 }
